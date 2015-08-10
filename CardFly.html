@@ -1,0 +1,54 @@
+<head>
+  <title>Microscope</title>
+</head>
+<body>
+<h1><a href="https://handwriting.io" target="_blank"> CardFly</a> </h1>
+
+
+
+<p class="error hidden"></p>
+
+
+<div class="container-fluid">
+  <div class="row">
+
+        <div class="well well-md"> 
+          <form id="render">
+
+    <label class="hidden">
+      <span>Choose an handwriting:</span>
+      <select id="handwritings"></select>
+    </label>
+
+    <label>
+      <span>Handwriting size (px):</span>
+      <input name="handwriting_size" type="number" min="6" max="60" value="20" />
+    </label>
+
+    <label>
+      <span>Line spacing:</span>
+      <input name="line_spacing" type="number" min="0" max="3" step="0.01" value="1.2" />
+    </label>
+
+    <label>
+      <span>Color:</span>
+      <input name="color" type="color" value="#000000" />
+    </label>
+
+    <label>
+      <textarea name="text" rows="8" cols="45" placeholder="What you enter here will be rendered as handwriting">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</textarea>
+    </label>
+
+    <button type="submit" class="btn btn-default">Render</button>
+    <span class="status hidden">Rendering</span>
+  </form>
+</div>
+    </div>
+    </div>
+    
+
+<div class="right">
+  <div id="image"><img></div>
+</div>
+
+</body>
